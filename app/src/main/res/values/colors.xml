@@ -6,4 +6,5 @@
 
     <color name="colorNavigationIcon">#dae9f6</color>
     <color name="colorNavigationText">#ffffff</color>
+    <color name="titleColor">#151515</color>
 </resources>
