@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <selector xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:color="@android:color/widget_edittext_dark" android:state_checked="true"
-            android:title="TODO" />
-        <item android:color="@color/colorPrimaryDark"
-            android:title="TODO" />
-    </selector>
     <item
         android:id="@+id/home_menu"
         android:title="@string/home"
         android:icon="@drawable/ic_home_black_24dp"/>
-
     <item
         android:id="@+id/search_menu"
         android:title="@string/explore"
         android:icon="@drawable/ic_restaurant_black_24dp"/>
-
     <item
         android:id="@+id/favorite_menu"
         android:title="@string/favorite"
