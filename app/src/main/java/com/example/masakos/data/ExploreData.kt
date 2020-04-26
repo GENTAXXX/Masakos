@@ -42,17 +42,17 @@ object ExploreData {
             R.drawable.tehanget,
             R.drawable.udanggoreng
     )
-
-    val listData : ArrayList<Explore>
-        get(){
-            val list = arrayListOf<Explore>()
-            for (position in exploreRecipe.indices){
-                val explore = Explore()
-                explore.name = exploreRecipe[position]
-                explore.desc = exploreDesc[position]
-                explore.photo = explorePict[position]
-                list.add(explore)
-            }
-            return list
-        }
+//
+//    val listData : ArrayList<Explore>
+//        get(){
+//            val list = arrayListOf<Explore>()
+//            for (position in exploreRecipe.indices){
+//                val explore = Explore()
+//                explore.name = exploreRecipe[position]
+//                explore.desc = exploreDesc[position]
+//                explore.photo = explorePict[position]
+//                list.add(explore)
+//            }
+//            return list
+//        }
 }

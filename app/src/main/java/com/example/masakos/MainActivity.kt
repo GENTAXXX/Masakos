@@ -23,9 +23,8 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        val fragment = DiscoverFragment.newInstance()
         bottom_navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelected)
-        val fragment = HomeFragment.newInstance()
         loadFragment(fragment)
     }
 
@@ -69,8 +68,8 @@ class MainActivity : AppCompatActivity(){
                     return@OnNavigationItemSelectedListener true
                 }
                 else -> {
-                    val fragment= HomeFragment.newInstance()
-                    toolbar.text = "Home"
+                    val fragment= DiscoverFragment.newInstance()
+                    toolbar.text = "Explore"
                     loadFragment(fragment)
                     return@OnNavigationItemSelectedListener true
                 }

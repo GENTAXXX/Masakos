@@ -8,4 +8,102 @@
     <string name="explore_recipe_desc">Kopi ini ndak enak!</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="explore_title">
+        <item>Bakpao Anak Kos</item>
+        <item>Coklat Cake Kapitalis</item>
+        <item>Kupi Dalgona</item>
+        <item>Nutrisar* Jeruk</item>
+        <item>Indom*e Aceh</item>
+        <item>Bubur Oat</item>
+        <item>Pancake Gopek</item>
+        <item>Seblak Instan</item>
+        <item>Warm Tea</item>
+        <item>Fried Shrimp</item>
+    </string-array>
+    <string-array name="explore_desc">
+        <item>Bakpao yang dibuat menggunakan magic jar, ga repottttt</item>
+        <item>Kue coklat khas negeri paman Sam
+            </item>
+        <item>Kopi mainstream sejuta umat</item>
+        <item>Beli diwarung cuma 1500an, gampang bikinnyaaa~~~</item>
+        <item>Sebenarnya ini cuman mie instan, maklum anak kos ehe</item>
+        <item>Bubur oat pelepas lapar tengah malam anak kos</item>
+        <item>Pancake instan yang tepung mixnya bisa dibeli di minimarket terdekat</item>
+        <item>Seblak gadungan, aslinya ya dalam bentuk mie instan</item>
+        <item>Warm tea biar keliatan mahal, btw teh anget kalo ga bisa bikin kebangetan deh!</item>
+        <item>Kalo yang ini udah rada mewah sih hehe</item>
+    </string-array>
+    <string-array name="explore_detail">
+        <item>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+        <item>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue felis non diam rhoncus, non fermentum ipsum efficitur.
+            In vel tempor mi, id consectetur lacus. Donec sit amet lobortis urna. Sed consequat purus sit amet augue luctus facilisis sed ac nunc.
+            Nam scelerisque sagittis diam in porttitor. Vivamus tincidunt elementum ante, non sodales elit pretium ac. Nam sed porta magna, eu vulputate nibh.
+        </item>
+    </string-array>
+    <array name="data_photo">
+        <item>@drawable/bakpao</item>
+        <item>@drawable/coklatkek</item>
+        <item>@drawable/dalgone</item>
+        <item>@drawable/jusjeruk</item>
+        <item>@drawable/mieaceh</item>
+        <item>@drawable/oatdang</item>
+        <item>@drawable/pancake</item>
+        <item>@drawable/seblak</item>
+        <item>@drawable/tehanget</item>
+        <item>@drawable/udanggoreng</item>
+    </array>
+    <string name="title_activity_detail_explore">DetailExploreActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
