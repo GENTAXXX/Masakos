@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Hi, Welcome to Masakos!</string>
+    <string name="pilihan">Various menu choices</string>
+    <string name="rekomen">Today recommended menu</string>
+
+    <string name="changeLanguage">Change language</string>
+</resources>

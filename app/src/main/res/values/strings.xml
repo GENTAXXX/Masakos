@@ -7,6 +7,12 @@
     <string name="explore_recipe_title">Kupi Dalgona</string>
     <string name="explore_recipe_desc">Kopi ini ndak enak!</string>
 
+    <string name="welcome">Hai, Selamat datang di Masakos!</string>
+    <string name="pilihan">Berbagai macam menu pilihan</string>
+    <string name="rekomen">Rekomendasi menu hari ini</string>
+
+    <string name="changeLanguage">Ubah Bahasa</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string-array name="explore_title">
         <item>Bakpao Anak Kos</item>
