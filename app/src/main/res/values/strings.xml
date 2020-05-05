@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Masakos</string>
-    <string name="home">Home</string>
-    <string name="explore">Explore</string>
-    <string name="favorite">Favorite</string>
-    <string name="account">Account</string>
-    <string name="explore_recipe_title">Kupi Dalgona</string>
+    <string name="app_name" translatable="false">Masakos</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="explore" translatable="false">Explore</string>
+    <string name="favorite" translatable="false">Favorite</string>
+    <string name="account" translatable="false">Account</string>
+    <string name="explore_recipe_title" translatable="false">Kupi Dalgona</string>
     <string name="explore_recipe_desc">Kopi ini ndak enak!</string>
 
     <string name="welcome">Hai, Selamat datang di Masakos!</string>
@@ -107,9 +107,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="previous">Sebelumnya</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="next">Selanjutnya</string>
+    <string name="explore_recipe_desc">Kopi ini ndak enak!</string>
 </resources>
