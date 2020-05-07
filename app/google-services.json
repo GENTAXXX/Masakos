@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "956199359497",
+    "firebase_url": "https://masakos-app.firebaseio.com",
+    "project_id": "masakos-app",
+    "storage_bucket": "masakos-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956199359497:android:10009d5c14b872901e14d8",
+        "android_client_info": {
+          "package_name": "com.example.masakos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956199359497-igf22fbs53mj5pdnepsmgdagdb5uel72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhgtagVDzzJ2YuH_AtyeNRfw3B5kyf9fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956199359497-igf22fbs53mj5pdnepsmgdagdb5uel72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
