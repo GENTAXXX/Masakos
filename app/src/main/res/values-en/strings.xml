@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Hi, Welcome to Masakos!</string>
+    <string name="pilihan">Various menu choices</string>
+    <string name="rekomen">Today recommended menu</string>
+
+    <string name="changeLanguage">Change language</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="explore_recipe_desc">This coffee is not delicious</string>
+</resources>
