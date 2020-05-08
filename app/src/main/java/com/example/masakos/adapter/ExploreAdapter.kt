@@ -1,12 +1,8 @@
 package com.example.masakos.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -39,7 +35,7 @@ class ExploreAdapter(private val listExplore: ArrayList<Explore>) : RecyclerView
                         .load(explore.photo)
                         .apply(RequestOptions().override(90 , 90))
                         .into(explore_pict)
-                tv_explore_title.text = explore.name
+                tv_explore_title.text = explore.title
                 tv_explore_desc.text = explore.desc
 
                 itemView.setOnClickListener { onItemClickCallback?.onItemClicked(explore) }

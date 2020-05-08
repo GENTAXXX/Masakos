@@ -1,7 +1,6 @@
 package com.example.masakos
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.masakos.classes.Explore
@@ -16,10 +15,10 @@ class DetailExploreActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_explore)
 
         val explore = intent.getParcelableExtra<Explore>(DiscoverFragment.ARG_POSITION)
-        exdetail_title.text = explore?.name
+        exdetail_title.text = explore?.title
         exdetail_desc.text = "\""+explore?.desc+"\""
-        exdetail_detail.text = explore?.detail
-        toolbar_title.text = explore?.name
+        exdetail_detail.text = explore?.author
+        toolbar_title.text = explore?.title
 
         Glide.with(this).load(explore?.photo).into(iv_exp_detail)
 

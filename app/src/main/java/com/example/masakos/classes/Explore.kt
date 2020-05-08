@@ -3,8 +3,9 @@ package com.example.masakos.classes
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Explore(var name : String  , var desc : String , val detail : String , val photo : Int ) : Parcelable {
+data class Explore(var id :String ,var title : String, var desc : String, val author : String, val photo : Int ) : Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readString().toString(),
             parcel.readString().toString(),
             parcel.readString().toString(),
             parcel.readString().toString(),
@@ -12,9 +13,10 @@ data class Explore(var name : String  , var desc : String , val detail : String 
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(name)
+        parcel.writeString(id)
+        parcel.writeString(title)
         parcel.writeString(desc)
-        parcel.writeString(detail)
+        parcel.writeString(author)
         parcel.writeInt(photo)
     }
 
