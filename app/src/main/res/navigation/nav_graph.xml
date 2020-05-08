@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/FirstFragment"
+    tools:ignore="UnusedNavigation">
 
     <activity
         android:id="@+id/FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Label Fragment 1"
         tools:layout="@layout/activity_detail_explore">
 
         <action
@@ -20,7 +21,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.masakos.fragment.DiscoverFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Label"
         tools:layout="@layout/fragment_discover">
 
         <action

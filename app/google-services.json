@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "956199359497-pfvqoeerbbe30rp3udlocsm4d78fk0lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.masakos",
+            "certificate_hash": "f6bb06ad8087e1da848aeb01d8f8cb9c242983b5"
+          }
+        },
+        {
           "client_id": "956199359497-igf22fbs53mj5pdnepsmgdagdb5uel72.apps.googleusercontent.com",
           "client_type": 3
         }

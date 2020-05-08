@@ -6,12 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.masakos.classes.Explore
 import com.example.masakos.fragment.DiscoverFragment
-import com.google.android.youtube.player.YouTubeBaseActivity
-import com.google.android.youtube.player.YouTubePlayerView
-
 import kotlinx.android.synthetic.main.activity_detail_explore.*
 import kotlinx.android.synthetic.main.content_detail_explore.*
-import kotlinx.android.synthetic.main.explore_card.*
 
 class DetailExploreActivity : AppCompatActivity() {
 

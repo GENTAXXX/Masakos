@@ -2,6 +2,9 @@ package com.example.masakos
 
 //import android.R
 //import android.R
+
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.messaging.FirebaseMessaging
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
@@ -23,7 +26,7 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fragment = DiscoverFragment.newInstance()
+        val fragment = HomeFragment.newInstance()
         bottom_navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelected)
         loadFragment(fragment)
     }
@@ -79,6 +82,7 @@ class MainActivity : AppCompatActivity(){
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         return super.onCreateOptionsMenu(menu)
     }
+
 }
 
 
