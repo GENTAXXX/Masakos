@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -19,49 +20,109 @@
 
             <ImageView
                 android:id="@+id/iv_exp_detail"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingHorizontal="10dp"
                 android:src="@drawable/coklatkek"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/exdetail_desc"
+                app:layout_constraintEnd_toStartOf="@+id/exdetail_title"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/exdetail_title"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
+                android:text="Bakpao KERERERERER"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/exdetail_rectype"
+                app:layout_constraintStart_toEndOf="@id/iv_exp_detail"
+                app:layout_constraintTop_toTopOf="@id/iv_exp_detail"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/exdetail_rectype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
                 android:gravity="center_vertical"
-                android:text="Bakpao KERERERERER"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_exp_detail"
-                app:layout_constraintBottom_toTopOf="@id/exdetail_desc"/>
+                android:paddingHorizontal="4dp"
+                android:text="Makanann"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/exdetail_category"
+                app:layout_constraintStart_toEndOf="@+id/iv_exp_detail"
+                app:layout_constraintTop_toBottomOf="@id/exdetail_title" />
+
+            <TextView
+                android:id="@+id/exdetail_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
+                android:text="Mudah Dibuat"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_exp_detail"
+                app:layout_constraintStart_toEndOf="@+id/iv_exp_detail"
+                app:layout_constraintTop_toBottomOf="@id/exdetail_rectype" />
 
             <TextView
                 android:id="@+id/exdetail_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
                 android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
                 android:text="Makanann iniiiiii"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/exdetail_ingretitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/exdetail_title" />
+                app:layout_constraintTop_toBottomOf="@id/iv_exp_detail" />
 
             <TextView
-                android:id="@+id/exdetail_detail"
+                android:id="@+id/exdetail_ingretitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="20dp"
-                android:text="Cara bikinnya"
+                android:text="Bahan-bahan"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/exdetail_desc" />
+                app:layout_constraintTop_toBottomOf="@+id/exdetail_desc" />
+            <!--            <TableRow-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/exdetail_ingretitle"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                android:paddingHorizontal="10dp"-->
+            <!--                >-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/ingred_detail"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:paddingHorizontal="20dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="Bahan"-->
+            <!--                    android:gravity="left" />-->
+            <!--            </TableRow>-->
+            <ListView
+                android:id="@+id/lv_detail_bahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/exdetail_ingretitle">
+
+            </ListView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

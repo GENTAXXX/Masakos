@@ -20,7 +20,14 @@ class FirestoreRecipeAdapter (
         private val context: Context,
         private val firebaseDB: FirebaseFirestore
 ): RecyclerView.Adapter<FirestoreRecipeAdapter.CardViewViewHolder>(){
+    private var onItemClickCallback: OnItemClickCallback? = null
 
+    fun setOnItemClickCallback( onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Recipe)
+    }
     inner class CardViewViewHolder (view: View):RecyclerView.ViewHolder(view){
 
         fun bind(recipe: Recipe){
@@ -33,6 +40,8 @@ class FirestoreRecipeAdapter (
                       .into(explore_pict)
               tv_explore_title.text = recipe.title
               tv_explore_desc.text = recipe.desc
+
+              itemView.setOnClickListener { onItemClickCallback?.onItemClicked(recipe) }
           }
         }
 

@@ -1,5 +1,6 @@
 package com.example.masakos.fragment
 
+import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.masakos.DetailExploreActivity
 import com.example.masakos.R
 import com.example.masakos.adapter.FirestoreRecipeAdapter
 import com.example.masakos.classes.Explore
@@ -36,7 +38,7 @@ class DiscoverFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val rootView: View = inflater.inflate(R.layout.fragment_discover, container, false)
-        firestoreDB = FirebaseFirestore.getInstance()
+
 //        loadRecipes()
 //        prepare()
 //        addItem()
@@ -51,18 +53,39 @@ class DiscoverFragment : Fragment() {
 //                startActivity(i)
 //            }
 //        })
+        firestoreDB = FirebaseFirestore.getInstance()
         firestoreDB!!.collection("resep").get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val resepList = mutableListOf<Recipe>()
+                var bahan: ArrayList<String>? = null
                 for (doc in task.result!!) {
                     val recipe = doc.toObject<Recipe>(Recipe::class.java)
+                    val ingredients: List<String>? = doc.toObject(Recipe::class.java).recipes
+                    val langkah:List<String>? = doc.toObject(Recipe::class.java).steps
                     recipe.id = doc.id
+                    recipe.recipes = doc["recipes"] as List<String>?
+                    recipe.steps = doc["steps"] as List<String>?
+//                    for (item in ingredients!!){
+//                        Log.d(TAG, item)
+//                        bahan?.add(item)
+//                    }
+                    for(item in recipe.recipes!!){
+                        Log.d(TAG, item)
+                    }
                     resepList.add(recipe)
                 }
                 val adapter = FirestoreRecipeAdapter(resepList, rootView.context, firestoreDB!!)
                 val mLayoutManager = LinearLayoutManager(rootView.context)
                 rv_explore.layoutManager = mLayoutManager
                 rv_explore.itemAnimator = DefaultItemAnimator()
+                adapter.setOnItemClickCallback(object : FirestoreRecipeAdapter.OnItemClickCallback{
+                    override fun onItemClicked(data: Recipe) {
+                        val i = Intent(rootView.context, DetailExploreActivity::class.java)
+                        i.putExtra(ARG_POSITION, data)
+                        startActivity(i)
+                    }
+
+                })
                 rootView.rv_explore.adapter = adapter
             } else {
                 Log.d(TAG, "Error Broo..", task.exception)
