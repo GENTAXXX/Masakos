@@ -79,6 +79,8 @@ class DiscoverFragment : Fragment() {
                 rv_explore.layoutManager = mLayoutManager
                 rv_explore.itemAnimator = DefaultItemAnimator()
                 adapter.setOnItemClickCallback(object : FirestoreRecipeAdapter.OnItemClickCallback{
+    private var firestore: ListenerRegistration? = null
+    private var listExplore: ArrayList<Explore> = arrayListOf()
                     override fun onItemClicked(data: Recipe) {
                         val i = Intent(rootView.context, DetailExploreActivity::class.java)
                         i.putExtra(ARG_POSITION, data)
@@ -93,10 +95,6 @@ class DiscoverFragment : Fragment() {
         }
 
         return rootView
-    }
-
-    private fun loadRecipes() {
-
     }
 
     companion object {

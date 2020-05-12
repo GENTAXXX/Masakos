@@ -1,21 +1,74 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#09C"
+    android:background="@color/colorPrimary"
     android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/appwidget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Selamat datang di widget!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/appwidget_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:background="#09C"
+        android:layout_marginTop="70dp"
         android:contentDescription="@string/appwidget_text"
         android:text="@string/appwidget_text"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/appwidget_how1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:text="1. Buka Aplikasi"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/appwidget_how2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:text="2. Pilih resep yang ingin dimasak"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/appwidget_how3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:text="3. Klik tombol plus(+) pada ujung kanan atas aplikasi"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:id="@+id/appwidget_how4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:text="4. Langkah memasak akan muncul kedalam widget"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
 
 </RelativeLayout>

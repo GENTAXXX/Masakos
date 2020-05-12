@@ -8,4 +8,9 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="explore_recipe_desc">This coffee is not delicious</string>
+    <string name="appwidget_text">How to add recipe to widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="dev_key">
+        AIzaSyC7iOPOpQDglF9asAoNnM7jqaU48K58ZGY
+    </string>
 </resources>

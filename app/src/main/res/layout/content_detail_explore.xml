@@ -8,15 +8,27 @@
     android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+
     <ScrollView
+        android:id="@+id/sv_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/youtube_player"
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toTopOf="@id/iv_exp_detail"
+                app:layout_constraintStart_toStartOf="parent" >
+
+            </fragment>
 
             <ImageView
                 android:id="@+id/iv_exp_detail"

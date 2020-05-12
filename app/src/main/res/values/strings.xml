@@ -107,6 +107,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
+    <string name="appwidget_text">Cara Menambahkan resep ke widget</string>
+    <string name="add_widget">Tambah widget</string>
+
+    <string name="dev_key">
+        AIzaSyC7iOPOpQDglF9asAoNnM7jqaU48K58ZGY
+    </string>
 </resources>
