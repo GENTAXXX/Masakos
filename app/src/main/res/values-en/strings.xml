@@ -8,4 +8,5 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="explore_recipe_desc">This coffee is not delicious</string>
+    <string name="login">Login</string>
 </resources>
